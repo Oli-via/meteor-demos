@@ -12,8 +12,13 @@ const ImageDetail = (props) => {
       <div className="media-left">
         <img src={props.picture.link} alt=""/>
       </div>
-      <div className="media-right">
-        {props.picture.title}
+      <div className="media-body">
+        <h4 className="media-dialog">
+          {props.picture.title}
+        </h4>
+        <p>
+          {props.picture.description}
+        </p>
       </div>
     </li>
   )
