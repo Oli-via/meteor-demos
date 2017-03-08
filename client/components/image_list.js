@@ -13,7 +13,7 @@ import ImageDetail from './image_detail';
 const ImageList = (props) => {
   const validImages = props.images.filter(image => !image.is_album);
   const RenderedImages = validImages.map((image) => {
-    return <ImageDetail key={image.title} picture={image}/>
+    return <ImageDetail key={image.title} image={image}/>
   });
 
   return (
