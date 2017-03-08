@@ -1,6 +1,9 @@
 /**
  * Created by aliyy on 2017/3/8.
  */
+
+// meteor add twbs: bootsrap@3.3.6
+
 // any js in here is automatically ran for us
 
 import React from 'react';

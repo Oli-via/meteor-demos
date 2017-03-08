@@ -8,9 +8,13 @@ const ImageDetail = (props) => {
   // props.picture.title
   // props.picture.link
   return (
-    <li>
-      <img src={props.picture.link} alt=""/>
-      {props.picture.title}
+    <li className="media list-group-item">
+      <div className="media-left">
+        <img src={props.picture.link} alt=""/>
+      </div>
+      <div className="media-right">
+        {props.picture.title}
+      </div>
     </li>
   )
 };
