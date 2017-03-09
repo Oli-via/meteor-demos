@@ -12,9 +12,8 @@ const EmployeeList = (props) => {
   return (
     <div>
       <div className="employee-list">
-        { props.employees.map( employee => <EmployeeDetail key={employee._id}/> ) }
+        { props.employees.map( employee => <EmployeeDetail employee={employee} key={employee._id}/> ) }
       </div>
-
     </div>
   )
 };
