@@ -1,0 +1,12 @@
+.employee-list {
+    /* 让div中的元素左浮动 */
+    display: flex;
+    /* 根据屏幕宽度自动换行 */
+    flex-wrap: wrap;
+    /* 每一行的盒子间距相同 */
+    justify-content: space-around;
+}
+
+.thumbnail {
+    width: 300px;
+}
