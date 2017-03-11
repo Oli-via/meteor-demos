@@ -14,7 +14,24 @@ Meteor.startup(() => {
   })
 });
 
+function onRoute(req, res, next) {
+  // find the item which token equals to req.params.token in Links collection
+  const link = Links.findOne({ token: req.params.token });
+  if (link) {
+
+    // 在link这条数据中增加（$increament）clicks += 1
+    Links.update(link, { $inc: { clicks: 1}});
+
+    // 307: redirect to link.url
+    res.writeHead(307, { 'location':link.url });
+    res.end();
+  } else {
+    next();
+  }
+
+}
+
 const middleware = ConnectRoute(function (router) {
-  router.get('/:token', req => console.log(req) );
+  router.get('/:token', onRoute );
 });
 WebApp.connectHandlers.use(middleware);
