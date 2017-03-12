@@ -1,11 +1,27 @@
 import React from 'react';
 import ReactDom from 'react-dom';
+import { Router, Route, IndexRoute } from 'react-router';
+import createBrowserHistory from 'history/createBrowserHistory'
+
 import App from './components/app';
+import BinsMain from './components/bins/bins_main';
+import BinsList from './components/bins/bins_list';
 
 // 不引入bins.js的话，bins.js里的Meteor method就不会执行
 import Bins from '../imports/collections/bins';
 
 
+const browserHistory = createBrowserHistory();
+
+// 把routes定义成jsx形式
+const routes = (
+  <Router history={browserHistory}>
+    <Route path="/" component={App}>
+      <Route path='bins/' component={BinsMain}/>
+    </Route>
+  </Router>
+);
+
 Meteor.startup(()=>{
-  ReactDom.render(<App/>, document.querySelector(".container"));
+  ReactDom.render(routes, document.querySelector(".container"));
 });
