@@ -13,10 +13,6 @@ class BinsEditor extends Component {
     Meteor.call('bins.update', this.props.bin, content);
   }
   render(){
-    if (!this.props.bin){
-      return <div>Loading...</div>
-    }
-
     return(
       <div className="col-xs-8">
         <h5>Input</h5>

@@ -14,14 +14,21 @@ Meteor.methods({
       ownerId: this.userId
     });
   },
+
   'bins.remove': function (bin) {
     return Bins.remove(bin);
   },
+
   'bins.update': function (bin, content) {
     // $set: { content: content }： set the content value with the content
     // 就是替换content的内容
     // return Bins.update(bin._id, { $set: { content: content } });
     return Bins.update(bin._id, { $set: { content } });
+  },
+
+  'bins.share': function (bin, email) {
+    // $push: modify/increase an array
+    return Bins.update(bin._id, { $push: { sharedWith: email } } )
   }
 });
 
