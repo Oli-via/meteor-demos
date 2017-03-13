@@ -92,6 +92,9 @@
         <item url="file://$USER_HOME$/.meteor/packages/accounts-ui-unstyled/1.1.12/web.browser/login_buttons_dialogs.js" />
         <item url="file://$USER_HOME$/.meteor/packages/caching-html-compiler/1.1.0/web.browser/caching-html-compiler.js" />
         <item url="file://$USER_HOME$/.meteor/packages/fastclick/1.0.13/web.browser/pre.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/sgslo_cmstyle/0.0.1/web.browser/cmstyle-tests.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/sgslo_cmstyle/0.0.1/web.browser/cmstyle.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/sgslo_cmstyle/0.0.1/web.browser/style.css" />
         <item url="file://$USER_HOME$/.meteor/packages/promise/0.8.8/web.browser/server.js" />
         <item url="file://$USER_HOME$/.meteor/packages/promise/0.8.8/web.browser/client.js" />
         <item url="file://$USER_HOME$/.meteor/packages/promise/0.8.8/web.browser/promise-tests.js" />
@@ -270,6 +273,9 @@
       <root url="file://$USER_HOME$/.meteor/packages/accounts-ui-unstyled/1.1.12/web.browser/login_buttons_dialogs.js" />
       <root url="file://$USER_HOME$/.meteor/packages/caching-html-compiler/1.1.0/web.browser/caching-html-compiler.js" />
       <root url="file://$USER_HOME$/.meteor/packages/fastclick/1.0.13/web.browser/pre.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/sgslo_cmstyle/0.0.1/web.browser/cmstyle-tests.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/sgslo_cmstyle/0.0.1/web.browser/cmstyle.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/sgslo_cmstyle/0.0.1/web.browser/style.css" />
       <root url="file://$USER_HOME$/.meteor/packages/promise/0.8.8/web.browser/server.js" />
       <root url="file://$USER_HOME$/.meteor/packages/promise/0.8.8/web.browser/client.js" />
       <root url="file://$USER_HOME$/.meteor/packages/promise/0.8.8/web.browser/promise-tests.js" />

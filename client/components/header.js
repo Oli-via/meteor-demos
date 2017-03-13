@@ -4,12 +4,17 @@
 import React, { Component } from 'react';
 import Accounts from './accounts';
 import { Bins } from '../../imports/collections/bins';
+import { Link, browserHistory } from 'react-router';
 
 class Header extends Component {
 
   onBinClick(event){
     event.preventDefault();
-    Meteor.call('bins.insert');
+    // error后的第二个参数是bins.insert返回的数据，这里返回的是创建的条目的_id
+    Meteor.call('bins.insert', (error, binId) => {
+      // 转到push的url页
+      browserHistory.push(`/bins/${binId}`);
+    });
   }
 
   render(){
@@ -17,7 +22,7 @@ class Header extends Component {
       <div>
         <nav className="nav navbar-default">
           <div className="navbar-header">
-            <a className="navbar-brand">Markbin</a>
+            <Link to='/' className="navbar-brand">Markbin</Link>
           </div>
           <ul className="nav navbar-nav">
             <li>

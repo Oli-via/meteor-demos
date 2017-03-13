@@ -14,9 +14,10 @@
     "meteor-node-stubs": "~0.2.0",
     "react": "^15.4.2",
     "react-addons-pure-render-mixin": "^15.4.2",
+    "react-codemirror": "^0.3.0",
     "react-dom": "^15.4.2",
     "react-meteor-data": "^0.2.10",
-    "react-router": "^4.0.0",
+    "react-router": "^2.0.0-rc5",
     "valid-url": "^1.0.9"
   }
 }
